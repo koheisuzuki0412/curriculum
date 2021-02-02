@@ -1,5 +1,6 @@
 package study;
 
+import java.text.SimpleDateFormat;
 import java.time.Year;
 import java.util.Calendar;
 import java.util.Date;
@@ -32,17 +33,21 @@ public class Study {
         System.out.println(calendar.get(Calendar.YEAR));
         System.out.println(calendar.get(Calendar.MONTH) + 1);
         System.out.println(calendar.get(Calendar.DATE));
+
         // 問③ 上記の「calendar」を使用し、本日から1年2ヶ月15日先の日付を表示しなさい。
         // - この課題に関しては課題実施日によって結果が異なりますので、Wiki課題の画像とは結果が異なります。
         // - また、うるう年の場合は設定内容が正しくとも日付がズレて表示される可能性があります。
-        System.out.println(calendar.get(Calendar.YEAR) + 1);
-        System.out.println(calendar.get(Calendar.MONTH) + 3);
-        System.out.println(calendar.get(Calendar.DATE) + 15);
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyy");
+        SimpleDateFormat sdf1 = new SimpleDateFormat("MM");
+        SimpleDateFormat sdf2 = new SimpleDateFormat("dd");
 
+        calendar.add(Calendar. YEAR ,1);
+        calendar.add(Calendar. MONTH ,2);
+        calendar.add(Calendar. DATE ,15);
 
-
-
-
+        System.out.println(sdf.format(calendar.getTime()));
+        System.out.println(sdf1.format(calendar.getTime()));
+        System.out.println(sdf2.format(calendar.getTime()));
 
         // うるう年判定
         printLeapYear(calendar.get(Calendar.YEAR));
