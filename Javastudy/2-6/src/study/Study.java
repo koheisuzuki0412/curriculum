@@ -1,6 +1,5 @@
 package study;
 
-import java.text.SimpleDateFormat;
 import java.time.Year;
 import java.util.Calendar;
 import java.util.Date;
@@ -25,32 +24,29 @@ public class Study {
         System.out.println(now);
 
         // Calendarクラスのインスタンスを生成
-        Calendar calendar = Calendar.getInstance();
+        Calendar cl = Calendar.getInstance();
 
         // 問② 「(Calendar.MONTH) + 数値」の処理は、想定していない値となる可能性があります。
         // その理由をコメントへ記述してください。
         // [ここへ記述]MONTHは値は０〜１１までになるので、現在の月を取得したい場合は＋１とする。
-        System.out.println(calendar.get(Calendar.YEAR));
-        System.out.println(calendar.get(Calendar.MONTH) + 1);
-        System.out.println(calendar.get(Calendar.DATE));
+        System.out.println(cl.get(Calendar.YEAR));
+        System.out.println(cl.get(Calendar.MONTH) + 1);
+        System.out.println(cl.get(Calendar.DATE));
 
         // 問③ 上記の「calendar」を使用し、本日から1年2ヶ月15日先の日付を表示しなさい。
         // - この課題に関しては課題実施日によって結果が異なりますので、Wiki課題の画像とは結果が異なります。
         // - また、うるう年の場合は設定内容が正しくとも日付がズレて表示される可能性があります。
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy");
-        SimpleDateFormat sdf1 = new SimpleDateFormat("MM");
-        SimpleDateFormat sdf2 = new SimpleDateFormat("dd");
 
-        calendar.add(Calendar. YEAR ,1);
-        calendar.add(Calendar. MONTH ,2);
-        calendar.add(Calendar. DATE ,15);
+        cl.add(Calendar.YEAR,1);
+        cl.add(Calendar.MONTH,3);
+        cl.add(Calendar.DATE,15);
 
-        System.out.println(sdf.format(calendar.getTime()));
-        System.out.println(sdf1.format(calendar.getTime()));
-        System.out.println(sdf2.format(calendar.getTime()));
+        System.out.println(cl.get(Calendar.YEAR));
+        System.out.println(cl.get(Calendar.MONTH));
+        System.out.println(cl.get(Calendar.DATE));
 
         // うるう年判定
-        printLeapYear(calendar.get(Calendar.YEAR));
+        printLeapYear(cl.get(Calendar.YEAR));
     }
 
     /**
