@@ -38,11 +38,11 @@ public class Study {
         // - また、うるう年の場合は設定内容が正しくとも日付がズレて表示される可能性があります。
 
         cl.add(Calendar.YEAR,1);
-        cl.add(Calendar.MONTH,3);
+        cl.add(Calendar.MONTH,2);
         cl.add(Calendar.DATE,15);
 
         System.out.println(cl.get(Calendar.YEAR));
-        System.out.println(cl.get(Calendar.MONTH));
+        System.out.println(cl.get(Calendar.MONTH) + 1);
         System.out.println(cl.get(Calendar.DATE));
 
         // うるう年判定
