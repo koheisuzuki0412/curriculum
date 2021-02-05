@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+/* ------------------------------ タブレット用 */
+@media screen and (max-width: 767px) {
+  .wrapper {
+    width: 300px;
+  }
+  .left-box {
+    width: 100px;
+  }
+  .right-box {
+    width: 200px;
+  }
+  .box {
+    width: 125px;
+  }
+  .orange-box {
+    width: 75px;
+  }
+}
+
+/* ------------------------------ モバイル用 */
+@media screen and (max-width: 479px) {
+  .wrapper {
+    width: 150px;
+  }
+  .left-box {
+    float: none;
+    width: 150px;
+  }
+  .right-box {
+    float: none;
+    width: 150px;
+  }
+  .box {
+    float: none;
+    width: 150px;
+  }
+  .orange-box {
+    float: none;
+    width: 150px;
+  }
+}

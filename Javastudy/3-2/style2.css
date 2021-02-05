@@ -1,0 +1,62 @@
+@charset "utf-8";
+
+/* ------------------------------ 共通 */
+* {
+  margin: 0;
+  padding: 0;
+}
+.clearfix::after { 
+  content: ''; 
+  display: block; 
+  clear: both;
+}
+.wrapper {
+  width: 400px;
+  margin: auto;
+}
+
+/* ------------------------------ PC用レイアウト */
+header {
+  background-color: #141f40;
+  height: 100px;
+}
+
+/* -------------------- 左側のBOX */
+.left-box {
+  background-color: #80bfa8;
+  width: 150px;
+  height: 250px;
+  float: left;
+}
+
+/* -------------------- 右側のBOX */
+.right-box {
+  float: right;
+  width: 250px;
+}
+.box {
+  float: left;
+  width: 150px;
+}
+.yellow-box {
+  background-color: #dbd400;
+  height: 50px;
+}
+.blue-box {
+  background-color: #0093b7;
+  height: 100px;
+}
+.orange-box {
+  background-color: #ff9e6b;
+  width: 100px;
+  height: 150px;
+  float: right;
+}
+.red-box {
+  background-color: #8c2727;
+  height: 100px;
+}
+footer {
+  background-color: #d98d30;
+  height: 100px;
+}
