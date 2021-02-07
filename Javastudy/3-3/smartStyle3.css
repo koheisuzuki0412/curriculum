@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+/* ------------------------------ モバイル用 */
+@media screen and (max-width: 479px) {
+  .wrapper {
+    width: 200px;
+  }
+  header {
+    height: 240px;
+  }
+  .header-in-box {
+    right: 35%;
+    top: 12.5%;
+  }
+  .mini-box {
+    float: none;
+  }
+  .left-box {
+    float: none;
+    width: 200px;
+    height: 100px;
+  }
+  .right-box {
+    float: none;
+    width: 200px;
+    height: 210px;
+  }
+  .right-in-box {
+    top: 0%;
+    left: 0%;
+    margin: 20px 30px;
+  }
+  .orange-box {
+    width: 130px;
+  }
+}
