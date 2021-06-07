@@ -16,10 +16,18 @@
 //④受け取った果物にジュースという文字列を結合して、呼び出し元に返す
 //⑤関数の実行：「みかん」を渡して、結果を受け取れるように適当な変数（orangeJuice）を用意
 //⑥返ってきた変数を利用して「〇〇が届きました」と出力する
+
+      // function createjuice(fruits) {
+      //   return fruits;
+      // }
+      // const x = createjuice("みかん");
+      // console.log(x + "を受け取りました。ジュースにして返します");
+      // const orangeJuice = createjuice("みかんジュース");
+      // console.log(orangeJuice + "が届きました。");
+
       function createjuice(fruits) {
-        return fruits;
+        console.log(fruits + 'を受け取りました。ジュースにして返します。');
+        return fruits + 'ジュース';
       }
-      const x = createjuice("みかん");
-      console.log(x + "を受け取りました。ジュースにして返す");
-      const orangeJuice = createjuice("みかん");
-      console.log(orangeJuice + "を受け取りました。");
+      let orangeJuice = createjuice('みかん');
+      console.log(orangeJuice + 'が届きました。');
