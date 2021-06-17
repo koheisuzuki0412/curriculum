@@ -1,14 +1,18 @@
 class Taiyaki {
-  constructor(redbean, cream, cheese) {
-    this.redbean = redbean;
-    this.cream = cream;
-    this.cheese = cheese;
+  constructor(ingredients) {
+    this.ingredients = ingredients;
   }
   property() {
-    console.log("中身は" + this.redbean + "です。");
-    console.log("中身は" + this.cream + "です。");
-    console.log("中身は" + this.cheese + "です。");
+    console.log("中身は" + this.ingredients + "です。");
   }
+
 }
-let okashi = new Taiyaki("あんこ", "クリーム", "チーズ");
-okashi.property();
+
+let cream = new Taiyaki("クリーム");
+cream.property();
+
+let redbean = new Taiyaki("あんこ");
+redbean.property();
+
+let cheese = new Taiyaki("チーズ");
+cheese.property();
