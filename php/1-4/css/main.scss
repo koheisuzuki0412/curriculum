@@ -1,0 +1,96 @@
+// ---------------------- color
+$navy: #141f40;
+$green: #80bfa8;
+$yellow: #dbd400;
+$blue: #0093b7;
+$red: #8c2727;
+$pink: #ff9e6b;
+$orange: #d98d30;
+// ---------------------- size
+$a: auto;
+$px0: 0px;
+$px50: 50px;
+$px75: 75px;
+$px125: 125px;
+$px100: 100px;
+$px150: 150px;
+$px200: 200px;
+$px300: 300px;
+$px400: 400px;
+// ---------------------- small size
+* {
+  margin: auto;
+}
+
+.wrap {
+  width: 150px;
+  margin-top: 30px;
+}
+.navy {
+  background: $navy;
+  height: $px100;
+}
+.green {
+  background: $green;
+  height: $px100;
+}
+.yellow {
+  background: $yellow;
+  height: $px50;
+}
+.blue {
+  background: $blue;
+  height: $px100;
+}
+.red {
+  background: $red;
+  height: $px100;
+}
+.pink {
+  background: $pink;
+  height: $px100;
+}
+.orange {
+  background: $orange;
+  height: $px100;
+}
+// ------------------------------------------ middle size
+@media screen and (min-width: 479px) {
+  .wrap {
+    width: $px300;
+  }
+  .l-box {
+    display: flex;
+  }
+  .r-box {
+    display: flex;
+  }
+  .mt-box {
+    width: $px125;
+  }
+  .green {
+    margin: 0;
+    height: auto;
+    width: $px100;
+  }
+  .pink {
+    width: $px75;
+    margin: $px0;
+    height: $a;
+  }
+}
+// ------------------------------------------ large size
+@media screen and (min-width: 678px) {
+  .wrap {
+    width: $px400;
+  }
+  .green {
+    width: $px150;
+  }
+  .mt-box {
+    width: $px150;
+  }
+  .pink {
+    width: $px100;
+  }
+}
