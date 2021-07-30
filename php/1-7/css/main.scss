@@ -1,0 +1,117 @@
+// ---------------------- color
+$navy: #141f40;
+$green: #80bfa8;
+$yellow: #dbd400;
+$blue: #0093b7;
+$red: #8c2727;
+$pink: #ff9e6b;
+$orange: #d98d30;
+// ---------------------- size
+$a: auto;
+$px0: 0px;
+$px50: 50px;
+$px75: 75px;
+$px125: 125px;
+$px100: 100px;
+$px150: 150px;
+$px200: 200px;
+$px250: 250px;
+$px300: 300px;
+$px400: 400px;
+// ---------------------- 共通
+* {
+  margin: auto;
+}
+
+// ---------------------- TOP BOX
+#top-box {
+  width: $px400;
+  margin-top: 30px;
+  .l-box {
+    display: flex;
+  }
+  .r-box {
+    display: flex;
+  }
+  .navy {
+    background: $navy;
+    height: $px100;
+  }
+  .green {
+    background: $green;
+    width: $px150;
+    height: $px250;
+    margin: $px0;
+  }
+  .yellow {
+    background: $yellow;
+    height: $px150;
+    width: $px100;
+  }
+  .blue {
+    background: $blue;
+    width: $px250;
+    height: $px100;
+  }
+  .red {
+    background: $red;
+    width: $px150;
+    height: $px100;
+  }
+  .pink {
+    background: $pink;
+    height: $px50;
+  }
+  .orange {
+    background: $orange;
+    height: $px100;
+  }
+}
+
+// ---------------------- BOTTOM BOX
+#bottom-box {
+  width: $px400;
+  margin-top: 30px;
+    .navy {
+      background: $navy;
+      height: $px100;
+    }
+    .l-box {
+      display: flex;
+    }
+    .r-box {
+      display: flex;
+    }
+    .m-box {
+      margin: 0;
+    }
+    .yellow {
+      background: $yellow;
+      height: $px150;
+      width: $px100;
+    }
+    .red {
+      background: $red;
+      height: $px50;
+    }
+    .pink {
+      background: $pink;
+      width: $px150;
+      height: $px100;
+    }
+    .blue {
+      background: $blue;
+      width: $px250;
+      height: $px100;
+    }
+    .green {
+      background: $green;
+      height: $px250;
+      width: $px150;
+    }
+    .orange {
+      background: $orange;
+      height: $px100;
+    }
+}
+  
